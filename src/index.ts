@@ -79,9 +79,9 @@ app.post('/api/login', (req: Request, res: Response) => {
 
     req.session.userId = email;
     console.log(" Request Session " +req.session.userId);
-    //  return res.status(200).json({ message: 'Login successful' });
+      return res.status(200).json({ message: 'Login successful' });
     // return res.status(200).json({ message: 'Login successful', redirect: '/api/landing' });
-    return res.redirect('/api/landing');
+    //return res.redirect('/api/landing');
   });
 });
 
